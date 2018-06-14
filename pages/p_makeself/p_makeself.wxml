@@ -1,0 +1,56 @@
+<!--pages/p_makeself/p_makeself.wxml-->
+<view id='mengban'>
+  <view id='pagebox'>
+    <view class='viewblock'>
+      <text class='viewtitle'>您的姓名</text>
+      <input confirm-type="done" value='{{yourname}}'></input>
+    </view>
+    <view class='viewblock'>
+      <text class='viewtitle'>TA的姓名</text>
+      <input confirm-type="done" value='{{hisname}}'></input>
+    </view>
+    <view class="music_section">
+      <view class="viewtitle">选择音乐</view>
+      <picker bindchange="bindPickerChange" value="{{musarray.title[mus_index]}}" range="{{musarray.title}}">
+        <view class="pickerbox">
+          {{musarray.title[mus_index]}}
+        </view>
+      </picker>
+      <button class='bgmuschangebtn' bindtap='bgmuschange'>试听/暂停</button>
+    </view>
+    <view class='viewblock textareabox'>
+      <text class='viewtitle'>祝福语</text>
+      <textarea class='textareastyle' bindinput="textareachange">{{zhufuyu}}
+      </textarea>
+      <view class='textareatips'>{{textarealast}}/{{textarealimit}}</view>
+    </view>
+    <view class='viewblock'>
+      <text class='viewtitle'>选择模板(背景图)</text>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{radioitems}}" wx:key>
+          <radio value="{{item.tips}}" checked="{{item.status}}"/>{{item.tips}}
+        </label>
+      </radio-group>
+      <!-- 预设模板块 -->
+      <view class='mubanbgpicbox' wx:if="{{mubanstatus=='预设'}}">
+        <!-- <view class='mubanbgpic mubanysbgpic' style='background:url({{mubanysbgpic}}) no-repeat;background-size:cover;'></view> 
+        <view class='mubanbgpic mubanysbgpic' style='background:url({{mubanysbgpic}}) no-repeat;background-size:cover;'></view>
+        <view class='mubanbgpic mubanysbgpic' style='background:url({{mubanysbgpic}}) no-repeat;background-size:cover;'></view>
+        <view class='mubanbgpic mubanysbgpic' style='background:url({{mubanysbgpic}}) no-repeat;background-size:cover;'></view> -->
+        <radio-group class="mubanbgpicbox radio-groupmubanysbgpic" bindchange="radioChangemubanysbgpic">
+          <label class="radio" wx:for="{{mubanysbgpic}}" wx:key>
+            <radio value="{{index}}" checked="{{item.status}}"/>
+            <view class='mubanbgpic mubanysbgpic' style='background:url({{item.url}}) no-repeat;background-size:cover;'>
+              <view class='mubanysbgpicselectpic' wx:if="{{mubanysbgpicselectindex==index}}">选中了</view>
+            </view>
+          </label>
+        </radio-group>
+      </view>
+      <!-- 自定义模板块 -->
+      <view class='mubanzdybgpicbox' wx:if="{{mubanstatus=='自定义'}}">
+        <view class='mubanbgpic mubanzdybgpic' bindtap='mubanzdyclick' style='background:url({{mubanzdybgpic}}) no-repeat;background-size:cover;'></view>
+      </view>
+    </view>
+    <view id='zhufudonebtn' bindtap='zhufudone'>生成祝福</view>
+  </view>
+</view>

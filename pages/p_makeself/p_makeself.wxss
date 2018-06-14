@@ -1,0 +1,132 @@
+/* pages/p_makeduilian/p_makeduilian.wxss */
+page{
+}
+#mengban{
+  background:  url('http://ooo0o.com/images/bgpic11.png')  no-repeat;
+   background-size: cover; 
+  /* background-size: auto 100%; */
+  background-position: 50% 0;
+}
+#pagebox{
+  padding: 20rpx 25rpx 40rpx;
+  background-color:rgba(255,255,255,0.6);
+}
+.viewblock{
+  margin-bottom: 20rpx;
+}
+.viewtitle{
+  color: rgb(100,100,100);
+  font-size: 38rpx;
+  display: block;
+  margin-bottom: 10rpx;
+}
+.viewblock>input,.viewblock>textarea{
+  font-size: 35rpx;
+  color: red;
+  padding: 10rpx 25rpx;
+  border: 1px solid #EBCEA5;
+  border-radius: 10rpx;
+}
+.pickerbox{
+  font-size: 35rpx;
+  color: red;
+  padding: 10rpx 25rpx;
+  border: 1px solid #EBCEA5;
+
+  text-align: center;
+}
+.music_section{
+  margin-bottom: 20rpx;
+  position: relative;
+}
+.bgmuschangebtn{
+  position: absolute;
+  right: 10rpx;
+  top: 0rpx;
+  width:150rpx;
+  font-size:25rpx;
+  padding: 0;
+}
+
+.textareastyle{
+  width: 650rpx;
+  height: 200rpx;
+  line-height: 45rpx;
+}
+.textareabox{
+  position: relative;
+  margin-bottom: 35rpx;
+}
+.textareatips{
+  position: absolute;
+  bottom: 20rpx;
+  right: 20rpx;
+  color: red;
+  font-size: 32rpx;
+}
+/* 对联样式 */
+.p_duilian>input{
+  text-align: center;
+}
+
+/* 模板样式 */
+.mubanbgpic{
+  width: 220rpx;
+  height: 322rpx;
+}
+.radio-group{
+  margin: 22rpx 0;
+}
+.mubanbgpicbox{
+   display: flex; 
+   /* justify-content: space-between;  */
+   flex-wrap: wrap; 
+  height: 685rpx;
+  /* position: relative; */
+  flex-direction:row;
+  margin-right: -20rpx;
+}
+.mubanzdybgpicbox{
+  height: 685rpx;
+  position: relative;
+}
+.mubanysbgpic{
+  /* float: left; */
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  position: relative;
+}
+.mubanysbgpicselectpic{
+  position: absolute;
+  left: 10rpx;
+  top: 10rpx;
+}
+.mubanzdybgpic{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width:320rpx;
+  height:422rpx;
+}
+
+.radio-groupmubanysbgpic radio{
+  display: none;
+}
+
+
+
+
+
+
+/* 底部生成祝福按钮 */
+#zhufudonebtn{
+  padding:18rpx 35rpx;
+  font-size:40rpx;
+  background-color: red;
+  color: #fff;
+  margin: 0 auto;
+  width: 220rpx;
+  text-align: center;
+  border-radius: 15rpx;
+}

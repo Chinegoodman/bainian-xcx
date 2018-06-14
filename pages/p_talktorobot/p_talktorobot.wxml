@@ -1,0 +1,59 @@
+<!--pages/p_talktorobot/p_talktorobot.wxml-->
+<view id='pagebox'>
+  <view class='topkong'></view>
+  <view class='header'>狗年大吉,祝君人、旺财、旺运道旺!</view>
+  <view class='content'>
+    <scroll-view class='talkbox' scroll-y='true'>
+      <view class='talk_left'>
+        <view class='talk_leftpic' style='background:url({{robotheaderpic}}) no-repeat;'></view>
+        <view class='talk_lefttext'>
+          {{talk_lefttext}}
+        </view>
+      </view>
+      <view class='talk_left'>
+        <view class='talk_leftpic' style='background:url({{robotheaderpic}}) no-repeat;'></view>
+        <view class='talk_lefttext'>
+          {{talk_lefttext}}
+        </view>
+      </view>
+      <view class='talk_left'>
+        <view class='talk_leftpic' style='background:url({{robotheaderpic}}) no-repeat;'></view>
+        <view class='talk_lefttext'>
+          {{talk_lefttext}}
+        </view>
+      </view>
+      <view class='talk_left'>
+        <view class='talk_leftpic' style='background:url({{robotheaderpic}}) no-repeat;'></view>
+        <view class='talk_lefttext'>
+          {{talk_lefttext}}
+        </view>
+      </view>
+      <view class='talk_left'>
+        <view class='talk_leftpic' style='background:url({{robotheaderpic}}) no-repeat;'></view>
+        <view class='talk_lefttext'>
+          {{talk_lefttext}}
+        </view>
+      </view>
+      <view class='talk_left'>
+        <view class='talk_leftpic' style='background:url({{robotheaderpic}}) no-repeat;'></view>
+        <view class='talk_lefttext'>
+          {{talk_lefttext}}
+        </view>
+      </view>
+
+      <view class='talk_right'>
+        <view class='talk_rightpic' style='background:url({{userheaderpic}}) no-repeat;'></view>
+        <view class='talk_righttext'>
+          {{talk_righttext}}
+        </view>
+      </view>
+    </scroll-view>
+
+    <view class='talkipt_btnbox'>
+      <input class='talkipt'>{{talkiptmsg}}</input>
+      <button class='talkbtnt' bindtap='sendmsg'>发送</button>
+    </view>
+  </view>
+  <view class='footer'>谛听机器人恭祝大家新春快乐</view>
+  <!-- <image src='{{testgif}}'></image> -->
+</view>

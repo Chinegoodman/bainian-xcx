@@ -1,0 +1,17 @@
+{
+  "pages":[
+    "pages/p_index/p_index",
+    "pages/p_talktorobot/p_talktorobot",
+    "pages/p_makeself/p_makeself",
+    "pages/p_makeduilian/p_makeduilian",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/p_caiqie/p_caiqie"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#DC1724",
+    "navigationBarTitleText": "拜年机器人",
+    "navigationBarTextStyle":"black"
+  }
+}

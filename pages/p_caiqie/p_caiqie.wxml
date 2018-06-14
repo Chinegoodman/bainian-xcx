@@ -1,0 +1,9 @@
+<!--pages/p_caiqie/p_caiqie.wxml-->
+<view id='pagebox'>
+  <!-- <view class='caiqieline'></view> -->
+  <scroll-view scroll-x='true' scroll-y='true' class='imgoutbox' bindscroll="scrollfun">
+    <image class='{{imgwhstyle}}' src='{{imgoriginal}}' style="width:{{picw}};height:{{pich}}" mode="aspectFit"></image>
+  </scroll-view>
+  <view wx:if="{{choseimgbtnstatus}}" class='choseimgbtn' bindtap='choseimgfun'>点击选择要上传的背景图片</view>
+  <view wx:if="{{!choseimgbtnstatus}}" class='choseimgbtn' bindtap='choseimgfun'>重新选择上传的背景图片</view>
+</view>
